@@ -1,0 +1,31 @@
+{
+  "expo": {
+    "name": "Mémoire",
+    "slug": "memoire-phone",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#0C0A08",
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.memoire.phone",
+      "infoPlist": {
+        "NSPhotoLibraryUsageDescription": "Mémoire accède à vos photos pour les trier et créer votre livre photo.",
+        "NSPhotoLibraryAddUsageDescription": "Mémoire enregistre votre livre photo dans votre galerie.",
+        "NSLocalNetworkUsageDescription": "Mémoire communique avec votre Mac sur le réseau Wi-Fi local pour générer le livre photo."
+      }
+    },
+    "android": {
+      "adaptiveIcon": { "backgroundColor": "#0C0A08" },
+      "permissions": ["READ_MEDIA_IMAGES", "READ_EXTERNAL_STORAGE"]
+    },
+    "plugins": [
+      ["expo-media-library", {
+        "photosPermission": "Mémoire accède à vos photos pour les trier et créer votre livre photo.",
+        "savePhotosPermission": "Mémoire enregistre votre livre photo dans votre galerie.",
+        "isAccessMediaLocationEnabled": true
+      }]
+    ],
+    "scheme": "memoire"
+  }
+}
